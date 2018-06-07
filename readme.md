@@ -105,3 +105,30 @@ The queries file (`queries.yaml`) is nominally located
 in the jira_tools directory. A `queriea.yaml` 
 file in the CWD will receive preference over the built-in 
 query file.
+
+## Example Command Lines
+
+1. python -m jira_tools help
+
+1. python -m jira_tools dump_parents -l debug
+
+1. python -m jira_tools e_feature_scanner -l info --verify --update --splatform "Broxton-P IVI" --sversion O --tversion O-MR1 --createmax 2 --comment "This is a comment added from the command line"
+
+1. python -m jira_tools copy_platform_to_platform --scenario copy_platform_to_platform -l info
+
+1. python -m jira_tools copy_platform_to_platform --scenario copy_platform_to_platform_AREQ-25937 -l info
+
+1. python -m jira_tools add_label_to_platform_version --scenario add_label_to_platform_version -l debug
+
+1. python -m jira_tools label_from_labeled_items --scenario OPM-128 -l debug
+
+1. python -m jira_tools project_to_csv --scenario Project-to-CSV -l debug
+
+1. python -m jira_tools add_label_to_platform_version --scenario add_label_to_platform_version --query_set add_label_to_platform_version_P4 -l info
+
+1. python -m jira_tools copy_platform_to_platform --scenario copy_platform_to_platform_FIX_GID -l info
+
+1. python -m jira_tools copy_platform_to_platform --scenario "Copy [O][Icelake-U SDC] to [O][Icelake-U SDC][AaaG]" -l info
+
+
+

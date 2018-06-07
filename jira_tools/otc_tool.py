@@ -856,7 +856,8 @@ def scan_areq_and_check_for_preq(parser, scenario, config, queries):
 
 def main():
     log.setup_logging(LOG_CONFIG_FILE,
-                      override={'handlers': {'info_file_handler': {'filename': '%s otc_tool.log'%strftime("%Y-%m-%d")}}})
+                      # override={'handlers': {'info_file_handler': {'filename': '%s otc_tool.log' % strftime("%Y-%m-%d")}}}
+                      )
     parser = argparse.ArgumentParser(description="This is an OTC tool for working with Jira projects.")
     connection_group=parser.add_argument_group(title="Connection control", description="About the connectionn to the server")
     connection_group.add_argument("-n", "--name", nargs='?', help="Alias for the target host" )

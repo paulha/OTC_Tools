@@ -1,5 +1,6 @@
 argparse
 jira_tools
 openpyxl
+git+http://github.com/paulha/jira_client.git
 git+http://github.com/paulha/utility_funcs.git
 # git+http://github.com/paulha/logger_yaml.git
