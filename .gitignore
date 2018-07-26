@@ -33,7 +33,7 @@ nbproject
 .hg
 .svn
 .CVS
-.idea
+# .idea
 node_modules
 dist
 
